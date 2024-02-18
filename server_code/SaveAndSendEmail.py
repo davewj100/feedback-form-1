@@ -19,16 +19,17 @@ def add_feedback(name, email, feedback):
   )
 
   # Now we send an email to you, the app's author!
-  anvil.email.send(#to="somebody@example.com", # Change this to your email address
-                  subject="Feedback from {}".format(name),
-                  text="""
-  A new person has filled out the feedback form!
+  # dj - Comment-out the emailing
+  # anvil.email.send(#to="somebody@example.com", # Change this to your email address
+  #                 subject="Feedback from {}".format(name),
+  #                 text="""
+  # A new person has filled out the feedback form!
 
-  Name: {}
-  Email address: {}
-  Feedback:
-  {}
-  """.format(name, email, feedback))
+  # Name: {}
+  # Email address: {}
+  # Feedback:
+  # {}
+  # """.format(name, email, feedback))
 
   # Pretty simple, huh?
   # To learn more about Anvil, go to:
